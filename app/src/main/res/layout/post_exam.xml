@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".Exam.post_exam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:background="#9089DD"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_today_black_24dp"
+            android:text="Date"/>
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:text="Time"/>
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_timer_black_24dp"
+            android:text="Duration"/>
+        <TextView
+            android:id="@+id/Room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_room_black_24dp"
+            android:text="Room"/>
+        <TextView
+            android:id="@+id/Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_speaker_notes_black_24dp"
+            android:text="Notes"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

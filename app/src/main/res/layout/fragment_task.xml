@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Task.TaskFragment2">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        style="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Subject"
+        android:background="@android:color/white"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/fui_transparent"
+        android:textColor="@android:color/white"
+        android:scrollbarSize="4dp"
+        android:textSize="18dp"
+        android:text="Add" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+         />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_today_black_24dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:hint="Pick a date"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText4"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Title"
+        android:drawableLeft="@drawable/ic_title_black_24dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_below="@+id/editText5"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:drawableLeft="@drawable/ic_speaker_notes_black_24dp"
+        android:hint="Details"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1976D2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Tasks"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>

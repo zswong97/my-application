@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        style="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/fui_transparent"
+        android:textColor="@android:color/white"
+        android:scrollbarSize="4dp"
+        android:textSize="18dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/subject"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_today_black_24dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:textSize="15dp"
+        android:hint="Pick a date" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@+id/time"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_timer_black_24dp"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="Duration" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/calendar"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="Pick a time" />
+
+    <EditText
+        android:id="@+id/room"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/duration"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_room_black_24dp"
+        android:hint="Room"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/room"
+        android:ems="10"
+        android:gravity="start|top"
+        android:background="@android:color/white"
+        android:hint="Add a notes"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_below="@+id/toolbar"
+        android:inputType="textPersonName"
+        android:background="@android:color/white"
+        android:hint="Enter Subject" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E061B4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Exam"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>
